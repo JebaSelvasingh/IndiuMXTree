@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="indium.indiumxtree.IndiuMXTree" pluginWidget="true" needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Indiu MXTree</name>
+    <description>My widget description</description>
+    <icon />
+    <properties>
+        <propertyGroup caption="General">
+
+
+            <property key="InputValue" type="attribute" required="false">
+                <caption>Input Attribute</caption>
+                <description >Input JSON String needs to be passed here</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+
+
+            <property key="outputAttribute" type="attribute" required="false">
+
+                <caption>Output Attribute</caption>
+                <description>Selected output value will be passed from the widget</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+
+            <property key="showExpandAll" type="attribute" required="false">
+
+                <caption>Expand All Attribute</caption>
+                <description>By default expand all the attributes</description>
+                <attributeTypes>
+                    <attributeType name="Boolean" />
+                </attributeTypes>
+            </property>
+            <property key="Search" type="boolean" defaultValue="false">
+                <caption>Enable Filter</caption>
+                <description>Clicking Yes will enable search filter</description>
+            </property>
+            <!-- On Change Action  for start-->
+            <property key="onChangeReset" type="action">
+                <caption>On Selection</caption>
+                <description>WIll be triggered on each selection</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
